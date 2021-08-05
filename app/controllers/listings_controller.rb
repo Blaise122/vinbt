@@ -1,4 +1,5 @@
 class ListingsController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :set_listing, only: %i[ show edit update destroy ]
   before_action :setup_form, only: [:new, :edit]
 
