@@ -67,13 +67,13 @@ class ListingsController < ApplicationController
       @listing = Listing.find(params[:id])
     end
 
-    #def set_user_listing
-      #@listing = current_user.listings.find_by_id(params[:id])
-      #if @listing == nil 
-        #flash[:alert] = "You don't have permission to do that"
-        #redirect_to listings_path
-      #end
-    #end
+    def set_user_listing
+      @listing = current_user.listings.find_by_id(params[:id])
+      if @listing == nil 
+        flash[:alert] = "You don't have permission to do that"
+        redirect_to listings_path
+      end
+    end
 
     def setup_form
       @categories = Category.all
@@ -81,6 +81,6 @@ class ListingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def listing_params
-      params.require(:listing).permit(:name, :description, :price, :size, :category_id)
+      params.require(:listing).permit(:name, :picture, :description, :price, :size, :category_id)
     end
 end
