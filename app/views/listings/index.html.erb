@@ -11,10 +11,11 @@
               <h4 class="card-title">
                 <%= listing.name%>
               </h4>
-              <h5 class="card-subtitle text-muted">Added
-                <%= time_ago_in_words(listing.created_at)%> ago
+              <h5 class="card-subtitle text-muted">
+                Added <%= time_ago_in_words(listing.created_at)%> ago
               </h5>
               <p class="card text text-secondary text-truncated"><%= listing.description%></p> 
+              <p class="card text text-secondary">Size:<%= listing.size%></p>
               <div class="d-flex justify-content-between">
                 <%= link_to  "More details", listing , class:"btn btn-outline-success" %>
                 $<%= listing.price%>
