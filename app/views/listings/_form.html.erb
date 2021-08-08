@@ -12,27 +12,28 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+    <%= form.label :name, class: "form-label mr-1" %>
+    <%= form.text_field :name, class: "form-control" %>
   </div>
 
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.label :description, class: "form-label mr-1" %>
+    <%= form.text_area :description, class: "form-control" %>
   </div>
 
   <div class="field">
-    <%= form.label :price %>
-    <%= form.text_field :price %>
+    <%= form.label :price, class: "form-label mr-1" %>
+    <%= form.text_field :price, class: "form-control" %>
   </div>
 
   <div class="field">
-    <%= form.label :size %>
-    <%= form.text_area :size %>
+    <%= form.label :size, class: "form-label mr-1" %>
+    <%= form.text_area :size, class: "form-control" %>
+    <small class='form-text text-muted'>Example: XS,  S,  M,  L and XL only</small>
   </div>
 
   <div class="field">
-    <%= form.label :category_id %>
+    <%= form.label :category_id,  class: "form-label mr-1" %>
     <%= form.select :category_id, @categories.map {|c| [c.name, c.id]} %>
   </div>
 
@@ -48,3 +49,4 @@
     <%= form.submit %>
   </div>
 <% end %>
+
