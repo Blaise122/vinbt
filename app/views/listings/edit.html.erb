@@ -1,6 +1,16 @@
-<h1>Editing Listing</h1>
 
-<%= render 'form', listing: @listing, categories: @categories %>
+<div class="section">
+  <div class="container">
+    <div class="columns is-centered">
 
-<%= link_to 'Show', @listing %> |
-<%= link_to 'Back', listings_path %>
+      <div class="column is-4">
+        <h1>Editing Listing</h1>
+
+        <%= render 'form', listing: @listing, categories: @categories %>
+
+        <%= link_to 'Show', @listing %> |
+        <%= link_to 'Back', listings_path %>
+      </div>
+    </div>
+  </div>
+</div>
