@@ -16,6 +16,12 @@
 
 @import 'bootstrap/scss/bootstrap';
 
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    font-family: poppins;
+}
 
 .jumbotron {
     background: url("home4.jpg") no-repeat center center;

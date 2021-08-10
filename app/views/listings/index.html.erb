@@ -19,7 +19,7 @@
     <% @listings.each do |listing|%>
       <div class="col">
         <div class="card border-success h-100">
-          
+          <%= image_tag listing.picture, class: "card-img top thumbnail" if listing.picture.attached?  %>
             <div class="card-body">
               <h4 class="card-title">
                 <%= listing.name%>
@@ -30,7 +30,11 @@
               <p class="card text text-secondary text-truncated"><%= listing.description%></p> 
               <p class="card text text-secondary">Size:<%= listing.size%></p>
               <div class="d-flex justify-content-between">
-                <%= link_to  "More details", listing , class:"btn btn-outline-success" %>
+              <% if user_signed_in? %>
+                 <%= link_to "More details", listing, class:"btn btn-outline-success" %>
+              <% else %>
+                <%= link_to  "More details", new_user_session_path , class:"btn btn-outline-success" %>
+              <% end %>
                 $<%= listing.price%>
               </div>
             </div>
@@ -40,4 +44,11 @@
     <%end%>
   </div>
 </div>
+                <hr />
+                <footer>    
+                  <div class="footer-bottom text-center">
+                      <p>Design by: VinBT 🌳</p>
+                      <p>Privacy Policy</p>
+                  </div>
+                </footer>
 </div>

@@ -8,8 +8,18 @@
         <p>You bought <%= @listing.name %> </p>
 
         <p>Here is your receipt:</p>
+        
         <%= link_to "Receipt", @purchase.receipt_url, target: :_blank %>
+        
       </div>
     </div>
+    
   </div>
+   <hr />
+  <footer>    
+        <div class="footer-bottom text-center">
+            <p>Design by: VinBT 🌳</p>
+            <p>Privacy Policy</p>
+        </div>
+    </footer>
 </div>

@@ -2,13 +2,11 @@
 
 <div class='container d-flex flex-column flex-md-row px-2 my-2 my-md-5'>
     <div class='col-12 col-md-7 col-lg-8 p-0 pr-md-3'> 
-      <%
-=begin%>
- <div class='col-12 p-0 mb-4'>
+
+      <div class='col-12 p-0 mb-4'>
         <%= image_tag @listing.picture, class: "card-img top thumbnail" if @listing.picture.attached? %>
       </div> 
-<%
-=end%>
+
     </div>
     <div class= 'col-lg-4 p-0 mx-2 d-md-block'>
       <h1 class='mb-sm-2 mb-md-5'><%=@listing.name%></h1>
@@ -28,6 +26,8 @@
 </div>
 
 
+
+
 <script src="https://js.stripe.com/v3/"></script>
 <script>
   document
@@ -40,4 +40,4 @@
         sessionId: "<%= @session_id %>"
       })
     })
-</script>
+</script> 
