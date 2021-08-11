@@ -13,11 +13,9 @@ def listing_attachment
 end
 
 
-# private
 
-#   def remove_whitespace
-#     self.name = self.name.strip
-#     self.description = self.description.strip
-#   end
+def remove_whitespace
+    self.name = self.name.strip
+    self.description = self.description.strip
+end
 
-# end 

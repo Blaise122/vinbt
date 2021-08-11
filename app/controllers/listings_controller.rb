@@ -7,6 +7,11 @@ class ListingsController < ApplicationController
   # GET /listings or /listings.json
   def index
     @listings = Listing.all
+    
+  end
+
+  def tshirts
+    @tshirts = Listing.where(category_id: 3)
   end
 
   # GET /listings/1 or /listings/1.json

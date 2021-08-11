@@ -1,0 +1,28 @@
+<nav class="panel ">
+    
+    <ul class="d-flex justify-content-evenly">
+        <div class="pv1">
+            <%= link_to 'All', listings_path, class: "btn btn-outline-success" %>
+        </div>
+
+        <div class="pv1">
+            <%= link_to 'Tshirts', listings_path(category_id: "Tshirts"), class: "btn btn-outline-success" %>
+        </div>
+
+        <div class="pv1">
+            <%= link_to 'Jackets', listings_path(category_id: "Jackets"), class: "btn btn-outline-success" %>
+        </div>
+
+        <div class="pv1">
+            <%= link_to 'Pants', listings_path(category_id:"Pants"), class: "btn btn-outline-success" %>
+        </div>
+
+        <div class="pv1">
+            <%= link_to 'Shorts', listings_path(category_id: "Shorts"), class: "btn btn-outline-success" %>
+        </div>
+
+        <div class="pv1">
+            <%= link_to 'Socks', listings_path(category_id: "Socks"), class: "btn btn-outline-success" %>
+        </div>
+    </ul>
+</nav>

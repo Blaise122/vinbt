@@ -52,3 +52,5 @@ gem 'simple_form', '~> 5.0', '>= 5.0.1'
 gem "aws-sdk-s3", "~> 1.96"
 
 gem "stripe", "~> 5.36"
+
+gem 'ransack', '~> 2.4'

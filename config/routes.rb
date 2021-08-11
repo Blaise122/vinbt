@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   end
   post '/payments/webhook', to: 'payments#webhook'
   get 'payments/success', to: 'payments#success'
+  # get 'listings/tshirts', to: 'listings#tshirts', as: 'listings_tshirts'
 
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

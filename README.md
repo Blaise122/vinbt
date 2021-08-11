@@ -64,10 +64,12 @@ I want to be able to see all of the listings without having to check in as a sit
 I don't want other people to be able to access my account as a buyer or vendor. I don't want other users to be able to update or delete my listings as a seller.
 
 > R13	Wireframes for your app
+![ERD](docs/.png)
 
 > R14	An ERD for your app
 
 ![ERD](docs/erd.png)
+![Final](docs/.png)
 
 > R15	Explain the different high-level components (abstractions) in your app
 
@@ -78,7 +80,7 @@ Devise enables user authentication, which is the act of evaluating whether someo
 
 **Stripe:** The Stripe API provides a secure, simple, and user-friendly payment solution within the app, while Stripe handles all monetary transactions outside of the app, making customers feel safer.
 
-**Amazon S3:** Cloud service that stores the images that user upload to the site.
+**Amazon S3:** Cloud service for image stotage that allows users upload to the site.
 
 
 **Bootstrap:** is used for styling the web application.
@@ -92,5 +94,6 @@ Devise enables user authentication, which is the act of evaluating whether someo
 
 > R20	Describe the way tasks are allocated and tracked in your project
 
-The project was tracked and managed using Trello. I began by brainstorming application ideas and settled in VinBT. I then processed by planning out and finishing the MVP, 
-Ruby on Rails that have full CRUD functionality, user authentication using Devise and image upload using "AWS S3 bucket and Stripe check out", whichi was able to do by creating my erd and wireframes. I prioritized some of the documentation questions after finishing the MVP, and then moved on to the features like upload multiple images and styling my pages.
+The project was tracked and managed using Trello. I began by brainstorming application ideas and settled on VinBT. I then broke down the documentation questions based on the difficulty/what can be done with application. I worked on the least difficult questions first then moved on to creating my ERD. Creating the ERD allowed me to have a better understanding of some of the features the application must need. i then worked on create a visual representation of the application by creating my wireframes and sitemap. After that, I then starting coding and by creating, full CRUD functionality, user authentication using Devise, payment method with stripe and image upload using "AWS S3 bucket. I prioritized some of the documentation questions after between coding and then finally moved on to styling the application's pages.
+<br>
+![Trello](docs/trello.png)

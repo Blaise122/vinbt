@@ -2,22 +2,22 @@
 
 
 <h1 class="hero-title text-center">Listings</h1>
+<br/>
+<br/>
 
-
-<%
-=begin%>
- <div class="column is-2 bg-light">
+<div class="class ='d-flex justify-content-evenly'">
   <div class="pl3 pr1">
     <%= render 'panel' %>
   </div>
-</div> 
-<%
-=end%>
+</div>  
+
+<hr /> 
+
 
 <div class="cotainer">
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 m-5">
     <% @listings.each do |listing|%>
-      <div class="col">
+      <div class="col-sm-8 col-md-6">
         <div class="card border-success h-100">
           <%= image_tag listing.picture, class: "card-img top thumbnail" if listing.picture.attached?  %>
             <div class="card-body">
@@ -27,9 +27,9 @@
               <h5 class="card-subtitle text-muted">
                 Added <%= time_ago_in_words(listing.created_at)%> ago
               </h5>
-              <br />
-              <p class="card text text-secondary text-truncated"><%= listing.description%></p> 
-              <p class="card text text-secondary">Size:<%= listing.size%></p>
+              
+              <p class="text-dark text-truncated"><%= listing.description%></p> 
+              <p class=" text-dark">Size:<%= listing.size%></p>
               <div class="d-flex justify-content-between">
               <% if user_signed_in? %>
                  <%= link_to "More details", listing, class:"btn btn-outline-success" %>
