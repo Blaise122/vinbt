@@ -174,6 +174,7 @@ An order can have one user (`belongs_to: user`) and listing (`belongs_to :listin
 
 
 > R19	Provide your database schema design
+
 ![Schema1](docs/schema1.png)
 
 ![Schema2](docs/schema2.png)
