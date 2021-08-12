@@ -1,3 +1,9 @@
+# Blaise Tshitenga
+
+## VinBT - RoR two-sided marketplace application T2A2
+
+<br>
+
 > R8	Why is it a problem that needs solving?
 
 Retro/vintage clothing has slowly been coming back in style and becoming more and more popular around the globe. In fact, it is even getting to the point where it can be considered part of mainstream fashion. However, the issue facing the vintage clothing industry is the shortage of supply. The shortage of supply means that prices tend to be high and limites/slows the growth of the industry as a whole.
@@ -5,6 +11,8 @@ What most online shoppers are looking for is value for money, but importantly pe
 Supply needs to increase in order to ensure the industry continues to grow and attract more customers.
 
 > R9	A link (URL) to your deployed app (i.e. website)
+
+https://vinbt.herokuapp.com
 
 > R10	A link to your GitHub repository (repo).
 - Ensure the repo is accessible by your Educators
@@ -111,6 +119,8 @@ Final ERD
 
 ![Final_erd](docs/final_erd.png)
 
+The final erd less tables compared to the initial one, this is  because as creation of the code proceed i came to the conclion that some of the tables were not need, for example the profile and the purechase table. The purchase table was replace with the order table because a purchase can fail. you need one step before making a purchase which is making a order. Profile table was also also removed as devise created user account when installed.
+
 > R15	Explain the different high-level components (abstractions) in your app
 
 VinBT is a Ruby on Rails two-sided marketplace application architected using MVC (Model, View, Controller). The view displays the user interface with minimum logic. With the help of bootstrape the view presents data from the model to the user. The controller being the brain of the application receives all the user input triggered form the view and translates it to commands for the model. The model is in charge of the application's data, logic, and rules of the application which it receices or adds to postgresql since its the prefered database. Methods for user permission, authentication (using devise) and data sanitization are used to protect the application from malicious activities.
@@ -169,7 +179,7 @@ An order can have one user (`belongs_to: user`) and listing (`belongs_to :listin
 
 * Like Listing table, order table belongs to multiple tables such as User and Listing. The primary keys in the User table(user_id), Listing table (listing_id) are used as foreign keys in the order table. 
 
-* Active record: The active storage tables are polymorphic and relate to images upload. A listing can have many pictures. No reference to this polymorphic association is made listing table however a `has_one_attached` relationship is defined in the listing model.
+
 
 
 
