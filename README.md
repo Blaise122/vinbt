@@ -12,10 +12,10 @@ Supply needs to increase in order to ensure the industry continues to grow and a
 
 > R9	A link (URL) to your deployed app (i.e. website)
 
-https://vinbt.herokuapp.com
+- https://vinbt.herokuapp.com
 
 > R10	A link to your GitHub repository (repo).
-- Ensure the repo is accessible by your Educators
+- https://github.com/Blaise122/vinbt
 
 > R11	Description of your marketplace app (website), including:
 
